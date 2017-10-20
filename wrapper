@@ -1,0 +1,22 @@
+from rtree import index
+#After importing the index module, construct an index with the default construction:
+idx = index.Index()
+#After instantiating the index, create a bounding box that we can insert into the index:
+left, bottom, right, top = (1, 5, 5, 10)
+#Insert an entry into the index using idx.insert(index,bounding box)
+
+%%your code is here
+
+left, bottom, right, top = (6, 10, 11, 20)
+#Insert another entry into the index using idx.insert(index+1,bounding box)
+
+%%your code is here
+
+#searching rectangle area
+search_rectangle=(6,11,11,21)
+#use list(list(idx.intersection())) to return the dataobject whose bounding box overlap with the search rectangle
+
+%%your code is here
+return_list=
+#print the index overlap with searching area)
+print(return_list)
